@@ -1,6 +1,6 @@
 # Math
 
-## Shape Classes
+## Shapes
 
 - circle_class.py - Circle
 - rectangle_class.py - Rectangle
