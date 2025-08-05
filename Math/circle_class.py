@@ -4,9 +4,6 @@ class Circle:
 	def __init__(self, radius):
 		self.radius = radius
 	
-	def get_radius(self):
-		return self.radius
-	
 	def get_diameter(self):
 		return 2 * self.radius
 	
