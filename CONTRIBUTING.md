@@ -20,7 +20,7 @@ With that in mind, our aim is to keep things **readable, organized, and consiste
 
 **Spacing** - Space things out.  These are fairly small programs so giving the lines more room to breathe with newlines is encouraged.
 
-**Intending** - After around 4 indents, it's recommended that some parts be placed in a separate function.  This keeps the job of different pieces of code more clear.
+**Indenting** - After around 4 indents, it's recommended that some parts be placed in a separate function.  This keeps the job of different pieces of code more clear.
 
 **Libraries** - While libraries are important to learn and use, in this repository, we are showcasing various algorithms, not just creating functional code.  Try to avoid using libraries when they'd be handling a bulk of the algorithm itself.
 
