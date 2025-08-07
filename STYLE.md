@@ -2,7 +2,7 @@
 
 Various conventions which range from strongly encouraged to required.
 
-## Naming Conventions
+## 1 - Naming Conventions
 
 Naming conventions relate to how we name various aspects of our programs.
 
@@ -14,13 +14,11 @@ Different naming conventions are used for different program parts:
 |Non-Constant Variables or Functions|Lowercase, underscores for spaces|`waiting_list` or `generate_primes()`|
 |Classes|Capitalized words, no spaces|`PickupTruck`|
 
-## Variables
+## 2 - Type Hints
 
-As a convention, a single numeric argument to a function should be written as `value` rather than a single variable such as `i` or `n` or `x`.
+Type hints specify the type of a variable, parameter, or output of a function/method.  In some instances, the `typing` library should be used.  Specifying the type of different parts of your program can give additional clarity to how your program works, improving the overall readability and making it easier for others to use your code.
 
-### Type Hints
-
-Variables should always make use of type hints.  In some cases, the `typing` library should be used.
+Here is an example of typing with a few variables:
 
 ```py
 from typing import List
@@ -30,29 +28,9 @@ is_seven_prime: bool = not (7 % 2 == 0 or 7 % 3 == 0)
 square_numbers: List[int] = [i * i for i in range(1, 101)]
 ```
 
-In reality these should probably all be written as constants (meaning they'd be uppercase) and `is_seven_prime` could be written with a simple `True`.
+In reality, these should probably all be written as constants (meaning they'd be uppercase) and `is_seven_prime` could be written with a simple `True`.
 
-## Functions
-
-### Function Prefixes
-
-It is encouraged to prefix functions based on what their purpose is, as shown below:
-
-|Function Category|Name Prefix|Example|
-|---|---|---|
-|Returns Boolean|`is_` or `does_`|`is_prime` or `does_repeat`|
-|Returns Stored Value (or small calculation)|`get_`|`get_length` or `get_area`|
-|Calculation|`compute_`|`compute_factorial`|
-|Search|`find_`|`find_median`|
-|Yields Any or Returns List|`generate_`|`generate_fibonacci_numbers`|
-
-The general idea is that each function is named as an action (or a question in the case of returning booleans) which describes what it does.  A function `find_optimal_path` can be assumed to be a search algorithm, looking for an optimal path while `get_volume` is likely a simple volume calculation.
-
-It doesn't cover every possible case, so use your best judgement where relevant.
-
-### Type Hints
-
-Type hints should be used for all variables, but also the parameters and return type.
+Type hints should be used for all variables, but also the parameters and the function return type.
 
 ```py
 def is_prime(n: int) -> bool:
@@ -80,7 +58,35 @@ def generate_fibonacci_numbers() -> Iterator[int]:
 		previous_number = current_number - previous_number
 ```
 
-### Spacing Arguments
+## 3 - Docstrings
+
+Docstrings enable us to explain the purpose of functions, methods, and classes in a more organized way than commenting.
+
+
+
+## 4 - Variables
+
+As a convention, a single numeric argument to a function should be written as `value` rather than a single character variable such as `i` or `n` or `x`.  This is to distinguish it from single character variables which are commonly used as "throwaways" or temporary.
+
+## 5 - Functions (and Methods)
+
+### 5.1 - Function Prefixes
+
+It is encouraged to prefix functions based on what their purpose is, as shown below:
+
+|Function Category|Name Prefix|Example|
+|---|---|---|
+|Returns Boolean|`is_` or `does_`|`is_prime` or `does_repeat`|
+|Returns Stored Value (or small calculation)|`get_`|`get_length` or `get_area`|
+|Calculation|`compute_`|`compute_factorial`|
+|Search|`find_`|`find_median`|
+|Yields Any or Returns List|`generate_`|`generate_fibonacci_numbers`|
+
+The general idea is that each function is named as an action (or a question in the case of returning booleans) which describes what it does.  A function `find_optimal_path` can be assumed to be a search algorithm, looking for an optimal path while `get_volume` is likely a simple volume calculation.
+
+It doesn't cover every possible case, so use your best judgement where relevant.
+
+### 5.2 - Spacing Arguments
 
 When a function name is longer or has many arguments, it is recommended to break the arguments up into separate lines like the example below:
 
