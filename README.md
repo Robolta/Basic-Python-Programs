@@ -1,6 +1,9 @@
-# Basic-Python-Programs
-Inspired to make my repo own by https://github.com/souravjain540/Basic-Python-Programs/
+# Basic Python Programs
+A collection of Python programs that showcase relatively basic algorithms.
+This project is heavily inspired by https://github.com/souravjain540/Basic-Python-Programs/
 
 ## Contributing
 
-Details about contributing can be found [here](CONTRIBUTING.md)
+**Currently contributor information is being developed, so I'd recommend waiting until the details are ironed out**
+
+Crossed out while details are being worked out: ~~Details about contributing can be found [here](CONTRIBUTING.md)~~
