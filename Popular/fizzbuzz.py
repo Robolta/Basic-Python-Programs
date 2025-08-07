@@ -1,4 +1,6 @@
-def fizzbuzz(upper_limit):
+from typing import Iterator
+
+def fizzbuzz(upper_limit: int) -> Iterator[int]:
 	"""
 	Yields strings based on the rules of "Fizzbuzz".
 	Iterates starting at 1 up to the upper_limit.
