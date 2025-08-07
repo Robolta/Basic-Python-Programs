@@ -14,6 +14,8 @@ def sieve_of_eratosthenes(upper_limit: int) -> List[int]:
 	
 	return [i for i in range(upper_limit + 1) if is_prime[i]]
 
+
+
 if __name__  == "__main__":
 	print(sieve_of_eratosthenes(10))
 	print(sieve_of_eratosthenes(100))

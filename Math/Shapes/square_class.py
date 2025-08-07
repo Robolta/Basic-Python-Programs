@@ -10,3 +10,11 @@ class Square:
 	
 	def get_area(self) -> int | float:
 		return self.length * self.length
+	
+
+
+if __name__ == "__main__":
+	square = Square(5.5)
+	print(square.get_diagonal())
+	print(square.get_perimeter())
+	print(square.get_area())
